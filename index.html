@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptor and Dekryptor Text</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1 class="title">Encryptor and Dekryptor Text (RC4 Algorithm)</h1>
+        </div>
+        <form action="">
+            <label for="text">Text (teks) :</label>
+            <textarea id="text" placeholder="Masukkan pesan yang akan dienkripsi / dekripsi!"></textarea>
+            <label for="key">Key (Kunci) :</label>
+            <input type="text" id="key" placeholder="Masukkan kunci" autocomplete="off" required>
+        </form>
+        <div class="btn-group">
+            <button type="submit" onclick="encryptdecrypt()">Encrypt</button>
+        </div>
+        <div class="result">
+            <label class="label">Result (Hasil) :<label>
+                    <textarea id="result" placeholder="Hasil dekripsi / enkripsi akan muncul disini" readonly></textarea>
+        </div>
+        <div class="btn-group">
+            <button type="submit" class="btn-clear" onclick="clearFields()">Clear</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
